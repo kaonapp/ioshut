@@ -13,7 +13,12 @@
 
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
-  -->
+  --><script>
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+       // Redirect or display a message for desktop users
+       window.location = "https://example.com/mobile-only-page";
+    }
+  </script>
 
 <base href="index.html">
   <meta charset="UTF-8">
