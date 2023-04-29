@@ -31,7 +31,12 @@
 
   <title>web_der</title>
   <link rel="manifest" href="manifest.json">
-
+  <script>
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+       // Redirect or display a message for desktop users
+       window.location = "https://example.com/mobile-only-page";
+    }
+  </script>
   <script>
     // The value below is injected by flutter build, do not touch.
     var serviceWorkerVersion = '617980982';
